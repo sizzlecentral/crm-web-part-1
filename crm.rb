@@ -1,2 +1,6 @@
+require_relative 'contact'
 require 'sinatra'
-require 'contact'
+
+get '/' do
+  erb :index
+end
