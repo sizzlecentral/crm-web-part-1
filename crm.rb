@@ -6,11 +6,12 @@ get '/' do
 end
 
 get '/contacts' do
-
   @contacts = Contact.all
-  erb(:contacts)
+  erb :contacts
+end
 
-
+get '/about' do
+  erb :about
 end
 
 
