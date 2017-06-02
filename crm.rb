@@ -2,7 +2,7 @@ require_relative 'contact'
 require 'sinatra'
 
 get '/' do
-  erb :index
+  redirect to('/contacts')
 end
 
 get '/contacts' do
@@ -12,6 +12,10 @@ end
 
 get '/about' do
   erb :about
+end
+
+get '/add-contact' do
+  erb :add_contact 
 end
 
 
