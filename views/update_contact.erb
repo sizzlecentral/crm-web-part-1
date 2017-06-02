@@ -1,0 +1,14 @@
+<form action="/update_contact/<%=@contact.id%>" method="post">
+  <input type="hidden" name="_method" value="PUT">
+  <label>First name:</label>
+  <input type="text" name="contact[first_name]" placeholder="<%=@contact.first_name%>">
+  <label>Last name:</label>
+  <input type="text" name="contact[last_name]" value="<%=@contact.last_name%>">
+  <label>Email:</label>
+  <input type="text" name="contact[email]" value="<%=@contact.email%>">
+  <label>Note:</label>
+  <input type="textarea" name="contact[note]" value="<%=@contact.note%>">
+  <br>
+  <input type="submit" value="Edit contact">
+  <br>
+</form>

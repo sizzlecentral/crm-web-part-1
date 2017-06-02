@@ -1,5 +1,7 @@
 require_relative 'contact'
 require 'sinatra'
+require 'sinatra/reloader'
+require 'pry'
 
 get '/' do
   redirect to('/contacts')
@@ -35,8 +37,15 @@ delete '/delete_contact/:id' do
 end
 
 get '/update_contact/:id' do
-  @update = Contact.find(params[:id])
+  @contact = Contact.find(params[:id])
   erb :update_contact
+end
+
+put '/update_contact/:id' do
+  @contact = Contact.find(params[:id])
+  binding.pry
+  @contact.update(params[:contact])
+  redirect to("/contacts/#{params[:id]}")
 end
 
 # ----- End of CRM routes ----- #
