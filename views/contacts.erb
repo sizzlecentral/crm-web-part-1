@@ -1,5 +1,7 @@
 <ul>
 <% @contacts.each do |contact| %>
-  <li> <%= contact.full_details %> </li>
+  <li><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>
+    <a href="/update_contact/<%= contact.id %>">Edit</a> | <a href="/delete_contact/<%= contact.id %>">Delete</a>
+  </li>
 <% end %>
 </ul>

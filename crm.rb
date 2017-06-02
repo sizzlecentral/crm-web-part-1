@@ -10,14 +10,34 @@ get '/contacts' do
   erb :contacts
 end
 
+get '/contacts/:id' do
+  @contact = Contact.find(params[:id])
+  erb :contact
+end
+
+
 get '/about' do
   erb :about
 end
 
-get '/add-contact' do
-  erb :add_contact 
+get '/add_contact' do
+  erb :add_contact
 end
 
+get '/delete_contact/:id' do
+  @contact = Contact.find(params[:id])
+  erb :delete_contact
+end
+
+delete '/delete_contact/:id' do
+  @contact = Contact.delete(params[:id])
+  redirect to("/")
+end
+
+get '/update_contact/:id' do
+  @update = Contact.find(params[:id])
+  erb :update_contact
+end
 
 # ----- End of CRM routes ----- #
 
