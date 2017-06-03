@@ -1,7 +1,6 @@
 require_relative 'contact'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'pry'
 
 get '/' do
   redirect to('/contacts')
@@ -43,7 +42,6 @@ end
 
 put '/update_contact/:id' do
   @contact = Contact.find(params[:id])
-  binding.pry
   @contact.update(params[:contact])
   redirect to("/contacts/#{params[:id]}")
 end

@@ -81,6 +81,10 @@ ul li {
   font-size: 20px;
 }
 
+ul li:hover {
+  background-color: #3a9188;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -109,7 +113,7 @@ h3 {
 }
 
 .button:hover {
-  background-color: black;
+  background-color: #3a9188;
 }
 
 input[type=submit] {
@@ -121,4 +125,20 @@ input[type=submit] {
   font-weight: bolder;
   font-size: 20px;
   border: none;
+}
+
+input[type=submit]:hover {
+  background-color: #3a9188;
+}
+
+input[type=text], input[type=textarea] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+label {
+  font-weight: bolder;
 }
