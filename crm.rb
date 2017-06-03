@@ -13,7 +13,6 @@ end
 
 get '/contacts/:id' do
   @contact = Contact.find(params[:id])
-  @total_contacts = Contact.all
   erb :contact
 end
 
