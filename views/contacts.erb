@@ -1,3 +1,7 @@
+<div class="red_bar">
+  <p>There are <strong>However Many</strong> contacts</p>
+</div>
+
 <ul>
 <% @contacts.each do |contact| %>
   <li><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>

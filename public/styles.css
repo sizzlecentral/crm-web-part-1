@@ -142,3 +142,16 @@ input[type=text], input[type=textarea] {
 label {
   font-weight: bolder;
 }
+
+.red_bar {
+  border-bottom: 10px solid white;
+  color: black;
+  background-color: #fa8072;
+  padding: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+p strong {
+  color: #40e0d0;
+}
