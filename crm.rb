@@ -16,13 +16,17 @@ get '/contacts/:id' do
   erb :contact
 end
 
-
 get '/about' do
   erb :about
 end
 
 get '/add_contact' do
   erb :add_contact
+end
+
+put '/add_contact/' do
+  @contact = Contact.create(params[:contact])
+  redirect to('/contacts')
 end
 
 get '/delete_contact/:id' do

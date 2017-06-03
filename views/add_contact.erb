@@ -1,1 +1,19 @@
-<h3>Not working yet...</h3>
+<h2>Please enter the contact details:</h2>
+<form action="/add_contact/" method="post">
+  <input type="hidden" name="_method" value="PUT">
+  <label>First name:</label><br>
+  <input type="text" name="contact[first_name]" placeholder="First name">
+  <br>
+  <label>Last name:</label><br>
+  <input type="text" name="contact[last_name]" placeholder="Last name">
+  <br>
+  <label>Email:</label><br>
+  <input type="text" name="contact[email]" placeholder="Email">
+  <br>
+  <label>Note:</label><br>
+  <input type="textarea" name="contact[note]" placeholder="Note">
+  <br>
+  <br>
+  <input type="submit" value="Add contact">
+  <br>
+</form>
