@@ -1,6 +1,6 @@
-<h2>Please enter the details to be updated:</h2>
+<h2>Please enter the details to be updated, any empty fields will be unsaved.</h2>
 <form action="/update_contact/<%=@contact.id%>" method="post">
-  <input type="hidden" name="_method" value="PUT">
+  <input type="hidden" name="_method" value="put">
   <label>First name:</label><br>
   <input type="text" name="contact[first_name]" placeholder="<%=@contact.first_name%>">
   <br>

@@ -3,10 +3,15 @@
 }
 
 body {
+  padding: 20px;
   max-width: 800px;
   margin: auto;
   font-family: Arial, Helvetica;
   line-height: 1.5;
+}
+
+main {
+    padding: .5em;
 }
 
 header {
@@ -44,19 +49,6 @@ nav a {
 
 nav a:hover {
   color: black;
-}
-
-
-footer {
-  color: white;
-  background-color: black;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-footer p {
-  padding: 15px;
 }
 
 h1 {
@@ -116,6 +108,41 @@ h3 {
   background-color: #3a9188;
 }
 
+.button_half_left {
+  width: 50%;
+  float: left;
+  margin-right: 2;
+  border-right: 2px solid white;
+  border-bottom: 4px solid white;
+  background-color: #40e0d0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.button_half_right {
+  width: 50%;
+  float: right;
+  margin-right: 2;
+  border-left: 2px solid white;
+  border-bottom: 4px solid white;
+  background-color: #40e0d0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.button_half_left:hover {
+  background-color: #3a9188;
+}
+
+.button_half_right:hover {
+  background-color: #3a9188;
+}
+
 input[type=submit] {
   width: 100%;
   background-color: #40e0d0;
@@ -155,4 +182,12 @@ label {
 strong {
     text-decoration: underline;
     text-decoration-color: #40e0d0;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
