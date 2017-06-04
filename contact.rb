@@ -19,8 +19,6 @@ class Contact < ActiveRecord::Base
     "#{first_name} #{last_name} (#{email})"
   end
 
-
-
 end
 
 Contact.auto_upgrade!

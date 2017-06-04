@@ -24,7 +24,7 @@ get '/add_contact' do
   erb :add_contact
 end
 
-put '/add_contact/' do
+post '/add_contact/' do
   @contact = Contact.create(params[:contact])
   redirect to('/contacts')
 end
