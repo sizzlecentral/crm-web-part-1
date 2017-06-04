@@ -182,6 +182,7 @@ label {
 strong {
     text-decoration: underline;
     text-decoration-color: #40e0d0;
+    font-family: Arial, Helvetica;
 }
 
 footer {
