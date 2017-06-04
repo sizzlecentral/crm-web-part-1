@@ -1,17 +1,17 @@
-<h2>Please enter the details to be updated, any empty fields will be unsaved.</h2>
+<h2>Please enter the details to be updated:</h2>
 <form action="/update_contact/<%=@contact.id%>" method="post">
   <input type="hidden" name="_method" value="put">
   <label>First name:</label><br>
-  <input type="text" name="contact[first_name]" placeholder="<%=@contact.first_name%>">
+  <input type="text" name="contact[first_name]" value="<%=@contact.first_name%>">
   <br>
   <label>Last name:</label><br>
-  <input type="text" name="contact[last_name]" placeholder="<%=@contact.last_name%>">
+  <input type="text" name="contact[last_name]" value="<%=@contact.last_name%>">
   <br>
   <label>Email:</label><br>
-  <input type="text" name="contact[email]" placeholder="<%=@contact.email%>">
+  <input type="text" name="contact[email]" value="<%=@contact.email%>">
   <br>
   <label>Note:</label><br>
-  <input type="textarea" name="contact[note]" placeholder="<%=@contact.note%>">
+  <input type="textarea" name="contact[note]" value="<%=@contact.note%>">
   <br>
   <br>
   <input type="submit" value="Edit contact">
