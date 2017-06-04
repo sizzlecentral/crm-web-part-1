@@ -1,14 +1,11 @@
 <div class="red_bar">
   <p>There are <strong>
-
 <% number_of_contacts = [] %>
 <% @contacts.each do |contact| %>
   <% contact = 1 %>
   <% number_of_contacts << contact %>
 <% end %>
-<%= number_of_contacts.sum %>
-
-</strong> contacts</p>
+<%= number_of_contacts.sum %></strong> contacts</p>
 </div>
 
 <ul>
