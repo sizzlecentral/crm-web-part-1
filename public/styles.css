@@ -206,3 +206,8 @@ main img {
   display: flex;
   margin: auto;
 }
+
+span.smaller {
+  font-size: .9em;
+  color: white;
+}
