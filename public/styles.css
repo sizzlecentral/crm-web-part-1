@@ -193,7 +193,7 @@ footer {
   margin-bottom: 15px;
 }
 
-.indent {
+.indent, label {
   margin: 0 1.1em;
 }
 

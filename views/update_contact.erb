@@ -1,4 +1,5 @@
-<h2>Please enter the details to be updated:</h2>
+<h3>Please change the details to be updated for <%= @contact.full_name %>:</h3>
+<br>
 <form action="/update_contact/<%=@contact.id%>" method="post">
   <input type="hidden" name="_method" value="put">
   <label>First name:</label><br>

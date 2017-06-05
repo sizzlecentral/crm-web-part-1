@@ -1,4 +1,4 @@
-<h3>Are you sure you want to delete this contact?</h3>
+<h3>Are you sure you want to delete <%= @contact.full_name %>?</h3>
 <br>
 
 <form action="/delete_contact/<%=@contact.id%>" method="post">
