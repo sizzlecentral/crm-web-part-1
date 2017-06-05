@@ -6,14 +6,23 @@ get '/' do
   redirect to('/contacts')
 end
 
+not_found do
+  status 404
+  erb :not_found
+end
+
 get '/contacts' do
   @contacts = Contact.all
   erb :contacts
 end
 
 get '/contacts/:id' do
-  @contact = Contact.find(params[:id])
-  erb :contact
+  @contact = Contact.where(:id =>params[:id]).first
+  if @contact
+    erb :contact
+  else
+    erb :not_found
+  end
 end
 
 get '/about' do
