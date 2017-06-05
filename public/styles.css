@@ -99,6 +99,7 @@ p {
   width: 40%;
   float: left;
   margin: auto;
+  margin-top: .1em;
 }
 
 .button {

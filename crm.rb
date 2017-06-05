@@ -61,7 +61,11 @@ end
 
 get '/search_results/' do
   @contacts = Contact.where(:first_name =>params[:first_name])
-  erb :search_results
+  if @contacts.any? == true
+    erb :search_results
+  else
+    erb :not_found
+  end
 end
 
 # ----- End of CRM routes ----- #
