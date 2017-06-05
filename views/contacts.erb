@@ -10,8 +10,8 @@
 
 <ul>
 <% @contacts.each do |contact| %>
-  <li><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>
-    <a href="/update_contact/<%= contact.id %>">Edit</a> | <a href="/delete_contact/<%= contact.id %>">Delete</a>
-  </li>
+  <li><div class="indent"><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>
+    <a class="red" href="/update_contact/<%= contact.id %>">Edit</a> | <a class="red" href="/delete_contact/<%= contact.id %>">Delete</a>
+  </div></li>
 <% end %>
 </ul>

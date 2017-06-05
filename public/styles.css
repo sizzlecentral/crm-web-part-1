@@ -10,10 +10,6 @@ body {
   line-height: 1.5;
 }
 
-main {
-    padding: .5em;
-}
-
 header {
   color: white;
   background-color: black;
@@ -31,7 +27,7 @@ main {
 nav {
   display: block;
   color: white;
-  background-color: #d3d3d3;
+  background-color: #bbbbbb;
   margin-bottom: 5px;
 }
 
@@ -86,6 +82,10 @@ a:hover {
   color: white;
 }
 
+a.red {
+  font-size: .9em;
+}
+
 p {
   margin: 0 1.1em;
   font-family: 'Droid Serif', serif;
@@ -112,8 +112,8 @@ h3 {
 .button_half_left {
   width: 50%;
   float: left;
-  border-right: 2px solid white;
-  border-bottom: 4px solid white;
+  border-right: 3px solid white;
+  border-bottom: 6px solid white;
   background-color: #40e0d0;
   color: white;
   padding: 20px;
@@ -126,8 +126,8 @@ h3 {
   width: 50%;
   float: right;
   margin-right: 2;
-  border-left: 2px solid white;
-  border-bottom: 4px solid white;
+  border-left: 3px solid white;
+  border-bottom: 6px solid white;
   background-color: #40e0d0;
   color: white;
   padding: 20px;
@@ -152,6 +152,7 @@ input[type=submit] {
   font-weight: bolder;
   font-size: 20px;
   border: none;
+  border-bottom: 6px solid white;
 }
 
 input[type=submit]:hover {
@@ -190,4 +191,14 @@ footer {
   background-color: black;
   text-align: center;
   margin-bottom: 15px;
+}
+
+.indent {
+  margin: 0 1.1em;
+}
+
+main img {
+  padding: 20px;
+  display: flex;
+  margin: auto;
 }
