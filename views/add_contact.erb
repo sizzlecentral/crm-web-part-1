@@ -1,18 +1,19 @@
 <h3>Please enter the contact details:</h3>
 <br>
+<br>
 <form action="/add_contact/" method="post">
   <input type="hidden" name="_method" value="post">
-  <label>First name:</label><br>
-  <input type="text" name="contact[first_name]" placeholder="First name">
+  <label for="first_name">First name:</label><br>
+  <input type="text" id="first_name" name="contact[first_name]" placeholder="First name">
   <br>
-  <label>Last name:</label><br>
-  <input type="text" name="contact[last_name]" placeholder="Last name">
+  <label for="last_name">Last name:</label><br>
+  <input type="text" id="last_name" name="contact[last_name]" placeholder="Last name">
   <br>
-  <label>Email:</label><br>
-  <input type="text" name="contact[email]" placeholder="Email">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="contact[email]" placeholder="Email">
   <br>
-  <label>Note:</label><br>
-  <input type="textarea" name="contact[note]" placeholder="Note">
+  <label for="note">Note:</label><br>
+  <input type="textarea" id="note" name="contact[note]" placeholder="Note">
   <br>
   <br>
   <input type="submit" value="Add contact">

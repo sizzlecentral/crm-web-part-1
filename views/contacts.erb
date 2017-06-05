@@ -1,17 +1,26 @@
 <div class="red_bar">
   <p>There are <strong>
-<% number_of_contacts = [] %>
-<% @contacts.each do |contact| %>
-  <% contact = 1 %>
-  <% number_of_contacts << contact %>
-<% end %>
-<%= number_of_contacts.sum %></strong> contacts</p>
+    <% number_of_contacts = [] %>
+    <% @contacts.each do |contact| %>
+      <% contact = 1 %>
+      <% number_of_contacts << contact %>
+    <% end %>
+    <%= number_of_contacts.sum %></strong> contacts
+  </p>
+  <div class="search">
+    <form action="/search_results/" method="get">
+      <label for="search-bar"></label>
+      <input type="search" name="first_name" id="search-bar" placeholder="Search by first name">
+      <input class="search" type="submit" value="Go">
+    </form>
+  </div>
+
 </div>
 
 <ul>
 <% @contacts.each do |contact| %>
   <li><div class="indent"><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>
-    <a class="red" href="/update_contact/<%= contact.id %>">Edit</a> | <a class="red" href="/delete_contact/<%= contact.id %>">Delete</a>
+    <a class="small" href="/update_contact/<%= contact.id %>">Edit</a> | <a class="red" href="/delete_contact/<%= contact.id %>">Delete</a>
   </div></li>
 <% end %>
 </ul>

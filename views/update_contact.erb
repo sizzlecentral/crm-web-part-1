@@ -1,18 +1,19 @@
 <h3>Please change the details to be updated for <%= @contact.full_name %>:</h3>
 <br>
+<br>
 <form action="/update_contact/<%=@contact.id%>" method="post">
   <input type="hidden" name="_method" value="put">
-  <label>First name:</label><br>
-  <input type="text" name="contact[first_name]" value="<%=@contact.first_name%>">
+  <label for="first_name">First name:</label><br>
+  <input type="text" id="first_name" name="contact[first_name]" value="<%=@contact.first_name%>">
   <br>
-  <label>Last name:</label><br>
-  <input type="text" name="contact[last_name]" value="<%=@contact.last_name%>">
+  <label for="last_name">Last name:</label><br>
+  <input type="text" id="last_name" name="contact[last_name]" value="<%=@contact.last_name%>">
   <br>
-  <label>Email:</label><br>
-  <input type="text" name="contact[email]" value="<%=@contact.email%>">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="contact[email]" value="<%=@contact.email%>">
   <br>
-  <label>Note:</label><br>
-  <input type="textarea" name="contact[note]" value="<%=@contact.note%>">
+  <label for="note">Note:</label><br>
+  <input type="textarea" id="note" name="contact[note]" value="<%=@contact.note%>">
   <br>
   <br>
   <input type="submit" value="Edit contact">

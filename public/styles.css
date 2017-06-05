@@ -86,13 +86,19 @@ a:hover {
   color: white;
 }
 
-a.red {
+a.small {
   font-size: .9em;
 }
 
 p {
   margin: 0 1.1em;
   font-family: 'Droid Serif', serif;
+}
+
+.red_bar p {
+  width: 40%;
+  float: left;
+  margin: auto;
 }
 
 .button {
@@ -159,16 +165,13 @@ input[type=submit]:hover {
   background-color: #3a9188;
 }
 
-input[type=submit].delete:hover {
-  background-color: #fa8072;
-}
-
 input[type=text], input[type=textarea] {
   width: 100%;
   padding: 15px;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
   margin: 5px 0;
+  display: inline-block;
 }
 
 label {
@@ -182,6 +185,7 @@ label {
   padding: 15px;
   font-weight: bolder;
   font-size: 20px;
+  overflow: hidden;
 }
 
 strong {
@@ -210,4 +214,34 @@ main img {
 span.smaller {
   font-size: .9em;
   color: white;
+}
+
+.search {
+  width: 40%;
+  float: right;
+  text-align: right;
+}
+
+input[type=search] {
+  border: none;
+  font-family: 'Droid Serif', serif;
+  font-size: .8em;
+  float: left;
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+input.search {
+  width: 15%;
+  padding: 10px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  float: left;
+  font-size: .8em;
+}
+
+form {
+    margin-top: -1.5em;
 }

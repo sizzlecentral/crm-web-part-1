@@ -17,7 +17,7 @@ get '/contacts' do
 end
 
 get '/contacts/:id' do
-  @contact = Contact.where(:id =>params[:id]).first
+  @contact = Contact.find_by(:id =>params[:id])
   if @contact
     erb :contact
   else
@@ -57,6 +57,11 @@ put '/update_contact/:id' do
   @contact = Contact.find(params[:id])
   @contact.update(params[:contact])
   redirect to("/contacts/#{params[:id]}")
+end
+
+get '/search_results/' do
+  @contacts = Contact.where(:first_name =>params[:first_name])
+  erb :search_results
 end
 
 # ----- End of CRM routes ----- #

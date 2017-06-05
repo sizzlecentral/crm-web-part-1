@@ -1,0 +1,9 @@
+<h3>Search results:</h3>
+<br>
+<ul>
+<% @contacts.each do |contact| %>
+  <li><div class="indent"><a href="/contacts/<%= contact.id %>"><%= contact.full_details %></a><br>
+    <a class="small" href="/update_contact/<%= contact.id %>">Edit</a> | <a class="red" href="/delete_contact/<%= contact.id %>">Delete</a>
+  </div></li>
+<% end %>
+</ul>
